@@ -4,6 +4,12 @@ import CartaoProduto from "./CartaoProduto";
 import TarefaCard from "./TarefaCard";
 import ConversorMoeda from "./ConversorMoeda";
 import Enquete from "./Enquete";
+import ListaPosts from "./ListaPosts";
+import TabelaUsuarios from "./TabelaUsuarios";
+import TarefasFiltro from "./TarefasFiltro";
+import BuscaPosts from "./BuscaPosts";
+import ComentariosPost from "./ComentariosPost";
+import ListaApi from "./ListaApi";
 
 const produtos = [
   { nome: "Teclado", preco: 149.9 },
@@ -67,6 +73,45 @@ export default function App() {
           <Enquete pergunta="Melhor linguagem?" opcaoA="TypeScript" opcaoB="Python" />
           <Enquete pergunta="Melhor editor?" opcaoA="VS Code" opcaoB="WebStorm" />
         </div>
+      </section>
+
+      <hr />
+      <h1 className="text-2xl font-bold">Listas, useEffect e fetch</h1>
+
+      {/* Listas e fetch · Exercício 1 */}
+      <section className="space-y-2">
+        <h2 className="text-xl font-bold">1. Lista de posts</h2>
+        <ListaPosts />
+      </section>
+
+      {/* Listas e fetch · Exercício 2 */}
+      <section className="space-y-2">
+        <h2 className="text-xl font-bold">2. Tabela de usuários</h2>
+        <TabelaUsuarios />
+      </section>
+
+      {/* Listas e fetch · Exercício 3 */}
+      <section className="space-y-2">
+        <h2 className="text-xl font-bold">3. Tarefas com filtro de status</h2>
+        <TarefasFiltro />
+      </section>
+
+      {/* Listas e fetch · Exercício 4 */}
+      <section className="space-y-2">
+        <h2 className="text-xl font-bold">4. Busca por título</h2>
+        <BuscaPosts />
+      </section>
+
+      {/* Listas e fetch · Exercício 5 */}
+      <section className="space-y-2">
+        <h2 className="text-xl font-bold">5. Comentários de um post</h2>
+        <ComentariosPost />
+      </section>
+
+      {/* Listas e fetch · Exercício 6 */}
+      <section className="space-y-2">
+        <h2 className="text-xl font-bold">6. Botão recarregar</h2>
+        <ListaApi />
       </section>
     </div>
   );
