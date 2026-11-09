@@ -10,6 +10,7 @@ import TarefasFiltro from "./TarefasFiltro";
 import BuscaPosts from "./BuscaPosts";
 import ComentariosPost from "./ComentariosPost";
 import ListaApi from "./ListaApi";
+import AppBiblioteca from "./biblioteca/App";
 
 const produtos = [
   { nome: "Teclado", preco: 149.9 },
@@ -113,6 +114,10 @@ export default function App() {
         <h2 className="text-xl font-bold">6. Botão recarregar</h2>
         <ListaApi />
       </section>
+
+      <hr />
+      <h1 className="text-2xl font-bold">Lista da Biblioteca (livros e gêneros)</h1>
+      <AppBiblioteca />
     </div>
   );
 }
